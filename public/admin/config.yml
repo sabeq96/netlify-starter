@@ -11,6 +11,8 @@ collections:
     folder: "src/static/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    preview_path: blog/{{year}}/{{month}}/{{title}}
+    preview_path_date_field: published_at
     fields: # The fields for each document, usually in front matter. 
     # Remove any that aren't needed for posts
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
