@@ -1,5 +1,6 @@
 import path from 'path'
 import axios from 'axios'
+import { LoremIpsum, loremIpsum } from "lorem-ipsum";
 
 const post = {
   userId: 10,
@@ -17,8 +18,8 @@ export default {
     //   'https://jsonplaceholder.typicode.com/posts'
     // )
 
-    let posts = new Array(9999).fill(null);
-    posts = posts.map((_, i) => ({ ...post, id: i }))
+    let posts = new Array(999).fill(null);
+    posts = posts.map((_, i) => ({ ...post, id: i, body: loremIpsum({count: 12, units: 'paragraphs', format: 'plain'}) }))
     
 
     return [

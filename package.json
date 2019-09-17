@@ -27,6 +27,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
+    "lorem-ipsum": "^2.0.3",
     "serve": "^11.1.0"
   }
 }
