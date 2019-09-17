@@ -6,6 +6,8 @@ media_folder: "public/uploads" # Media files will be stored in the repo under pu
 public_folder: "/uploads" # Folder path where uploaded files will be accessed, relative to the base of the built site
 show_preview_links: true
 publish_mode: editorial_workflow
+# site_url: https://gallant-banach-fd8593.netlify.com/
+site_url: http://localhost:3000/
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
@@ -13,7 +15,7 @@ collections:
     folder: "src/static/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    preview_path: blog/{{slug}}
+    preview_path: blog/post/{{title}}
     preview_path_date_field: published_at
     fields: # The fields for each document, usually in front matter. 
     # Remove any that aren't needed for posts
