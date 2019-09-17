@@ -3,8 +3,9 @@ import { useRouteData } from 'react-static'
 //
 import { Link } from 'components/Router'
 
-export default function Post() {
+export default function Post(data) {
   const { post } = useRouteData()
+  console.log(data)
   return (
     <div>
       <Link to="/blog/">{'<'} Back</Link>
