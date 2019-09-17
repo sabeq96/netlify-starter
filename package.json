@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
-    "axios": "^0.19.0",
+    "gray-matter": "^4.0.2",
+    "klaw": "^3.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-static": "^7.2.0",
@@ -27,7 +28,6 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
-    "lorem-ipsum": "^2.0.3",
     "serve": "^11.1.0"
   }
 }

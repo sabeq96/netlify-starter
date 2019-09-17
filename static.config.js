@@ -1,26 +1,43 @@
 import path from 'path'
-import axios from 'axios'
-import { LoremIpsum, loremIpsum } from "lorem-ipsum";
+import fs from 'fs';
+import klaw from 'klaw';
+import matter from 'gray-matter';
 
-const post = {
-  userId: 10,
-  id: 100,
-  title: 'at nam consequatur ea labore ea harum',
-  body: 'cupiditate quo est a modi nesciunt soluta\nipsa ' +
-    'voluptas error itaque dicta in\nautem qui minus ' +
-    'magnam et distinctio eum\naccusamus ratione error ' +
-    'aut'
-};
+function getPosts() {
+  const items = [];
+
+  const getFies = () => new Promise(resolve => {
+    if(fs.existsSync('./src/static/posts')) {
+      klaw('./src/static/posts')
+        .on('data', item => {
+          if(path.extname(item.path) === '.md') {
+            const data = fs.readFileSync(item.path, 'utf8');
+            const dataObj = matter(data);
+            dataObj.data.slug = dataObj.data.title.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
+            delete dataObj.orig;
+
+            items.push(dataObj);
+          }
+        })
+        .on('error', e => {
+          console.error(e);
+        })
+        .on('end', () => {
+          resolve(items);
+        })
+    } else {
+      resolve(items);
+    }
+  });
+
+  return getFies();
+}
 
 export default {
   getRoutes: async () => {
-    // const { data: posts } = await axios.get(
-    //   'https://jsonplaceholder.typicode.com/posts'
-    // )
+    const posts = await getPosts();
+    // const posts = []
 
-    let posts = new Array(9).fill(null);
-    posts = posts.map((_, i) => ({ ...post, id: i, body: loremIpsum({count: 12, units: 'paragraphs', format: 'plain'}) }))
-    
 
     return [
       {
@@ -29,7 +46,7 @@ export default {
           posts,
         }),
         children: posts.map(post => ({
-          path: `/post/${post.id}`,
+          path: `/post/${post.data.slug}`,
           template: 'src/containers/Post',
           getData: () => ({
             post,
