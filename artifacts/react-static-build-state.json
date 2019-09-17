@@ -1,0 +1,61 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "/home/dawid/Dokumenty/netlify-starter/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      {
+        "location": "/home/dawid/Dokumenty/netlify-starter/src/pages"
+      }
+    ],
+    "/home/dawid/Dokumenty/netlify-starter/node_modules/react-static-plugin-reach-router/browser.api.js",
+    "/home/dawid/Dokumenty/netlify-starter/node_modules/react-static-plugin-sitemap/dist/node.api.js",
+    "/home/dawid/Dokumenty/netlify-starter"
+  ],
+  "paths": {
+    "ROOT": "/home/dawid/Dokumenty/netlify-starter",
+    "SRC": "/home/dawid/Dokumenty/netlify-starter/src",
+    "DIST": "/home/dawid/Dokumenty/netlify-starter/dist",
+    "ASSETS": "/home/dawid/Dokumenty/netlify-starter/dist",
+    "PLUGINS": "/home/dawid/Dokumenty/netlify-starter/plugins",
+    "TEMP": "/home/dawid/Dokumenty/netlify-starter/tmp",
+    "ARTIFACTS": "/home/dawid/Dokumenty/netlify-starter/artifacts",
+    "PUBLIC": "/home/dawid/Dokumenty/netlify-starter/public",
+    "NODE_MODULES": "/home/dawid/Dokumenty/netlify-starter/node_modules",
+    "EXCLUDE_MODULES": "/home/dawid/Dokumenty/netlify-starter/node_modules",
+    "PACKAGE": "/home/dawid/Dokumenty/netlify-starter/package.json",
+    "HTML_TEMPLATE": "/home/dawid/Dokumenty/netlify-starter/dist/index.html",
+    "STATIC_DATA": "/home/dawid/Dokumenty/netlify-starter/dist/staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
