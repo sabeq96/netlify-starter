@@ -4,9 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
-  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-
   <!-- Include the styles for the Netlify CMS UI, after your own styles -->
   <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" />
 
@@ -17,14 +14,36 @@
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.1.0/dist/netlify-cms.js"></script>
   <script>
-    const Component = React.createElement((props) => (
-      <div>
-        kupa
-      </div>
-    ));
-    
-    CMS.registerPreviewTemplate('blog', Component)
-  </script>
+      var GeneralPreview = createClass({
+        // Object fields are simpler than lists - instead of `widgetsFor` returning
+        // an array of objects, it returns a single object. Accessing the shape of
+        // that object is the same as the shape of objects returned for list fields:
+        //
+        // {
+        //   data: { front_limit: 0, author: 'Chris' },
+        //   widgets: { front_limit: (<WidgetComponent>), author: (WidgetComponent>)}
+        // }
+        render: function() {
+          var entry = this.props.entry;
+          var title = entry.getIn(['data', 'site_title']);
+          var posts = entry.getIn(['data', 'posts']);
+          console.log(this.props)
+      
+          return h('div', {},
+            h('h1', {}, title),
+            h('dl', {},
+              h('dt', {}, 'Posts on Frontpage'),
+              h('dd', {}, this.props.widgetsFor('posts').getIn(['widgets', 'front_limit']) || 0),
+      
+              h('dt', {}, 'Default Author'),
+              h('dd', {}, this.props.widgetsFor('posts').getIn(['data', 'author']) || 'None'),
+            )
+          );
+        }
+      });
+      
+      CMS.registerPreviewTemplate("blog", GeneralPreview);
+      </script>
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
