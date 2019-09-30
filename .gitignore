@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -67,3 +68,9 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+=======
+node_modules
+dist
+artifacts
+tmp
+>>>>>>> 419c2cc1c8807007cbb7425709e7f89c26433c48
