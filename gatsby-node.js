@@ -11,7 +11,7 @@ const post = {
     'aut'
 };
 
-let posts = new Array(9).fill(null);
+let posts = new Array(999).fill(null);
     posts = posts.map((_, i) => ({ ...post, id: i, body: loremIpsum({count: 12, units: 'paragraphs', format: 'plain'}) }))
     
 
