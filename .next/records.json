@@ -1,0 +1,55 @@
+{
+  "modules": {
+    "byIdentifier": {},
+    "usedIds": {}
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/GpSzaXCu9GLDuaCokRWUF/pages/_app.js": 2,
+      "static/GpSzaXCu9GLDuaCokRWUF/pages/_error.js": 3,
+      "static/GpSzaXCu9GLDuaCokRWUF/pages/index.js": 4,
+      "static/GpSzaXCu9GLDuaCokRWUF/pages/post/[id].js": 5,
+      "static/runtime/main.js": 6,
+      "static/i-bWz0p6Ip4m5OZ4mHDh8/pages/_app.js": 7,
+      "static/i-bWz0p6Ip4m5OZ4mHDh8/pages/_error.js": 8,
+      "static/i-bWz0p6Ip4m5OZ4mHDh8/pages/index.js": 9,
+      "static/i-bWz0p6Ip4m5OZ4mHDh8/pages/post/[id].js": 10,
+      "static/StWYXgre9NhoL-vEZYsHh/pages/_app.js": 2,
+      "static/StWYXgre9NhoL-vEZYsHh/pages/_error.js": 3,
+      "static/StWYXgre9NhoL-vEZYsHh/pages/index.js": 4,
+      "static/StWYXgre9NhoL-vEZYsHh/pages/post/[id].js": 5,
+      "static/JQEOV9-LNLaBrtXzby76b/pages/_app.js": 7,
+      "static/JQEOV9-LNLaBrtXzby76b/pages/_error.js": 8,
+      "static/JQEOV9-LNLaBrtXzby76b/pages/index.js": 9,
+      "static/JQEOV9-LNLaBrtXzby76b/pages/post/[id].js": 10,
+      "static/VNGclE1qPpSbVltpPSHVg/pages/_app.js": 2,
+      "static/VNGclE1qPpSbVltpPSHVg/pages/_error.js": 3,
+      "static/VNGclE1qPpSbVltpPSHVg/pages/index.js": 4,
+      "static/VNGclE1qPpSbVltpPSHVg/pages/post/[id].js": 5,
+      "static/An0I60IkDAvKlozZh3bfd/pages/_app.js": 7,
+      "static/An0I60IkDAvKlozZh3bfd/pages/_error.js": 8,
+      "static/An0I60IkDAvKlozZh3bfd/pages/index.js": 9,
+      "static/An0I60IkDAvKlozZh3bfd/pages/post/[id].js": 10,
+      "static/ogo2XzpiZ1WnBl9sZdskd/pages/_app.js": 2,
+      "static/ogo2XzpiZ1WnBl9sZdskd/pages/_error.js": 3,
+      "static/ogo2XzpiZ1WnBl9sZdskd/pages/index.js": 4,
+      "static/ogo2XzpiZ1WnBl9sZdskd/pages/post/[id].js": 5,
+      "static/FAyGfpVBnKy-xY2PBrZ_S/pages/_app.js": 7,
+      "static/FAyGfpVBnKy-xY2PBrZ_S/pages/_error.js": 8,
+      "static/FAyGfpVBnKy-xY2PBrZ_S/pages/index.js": 9,
+      "static/FAyGfpVBnKy-xY2PBrZ_S/pages/post/[id].js": 10
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

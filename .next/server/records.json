@@ -1,0 +1,70 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/index.js": 0,
+      "multi private-next-pages/post/[id].js": 1,
+      "multi next/dist/pages/_app": 2,
+      "multi next/dist/pages/_error": 3,
+      "multi next/dist/pages/_document": 4
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/GpSzaXCu9GLDuaCokRWUF/pages/_app.js": 0,
+      "static/GpSzaXCu9GLDuaCokRWUF/pages/_document.js": 1,
+      "static/GpSzaXCu9GLDuaCokRWUF/pages/_error.js": 2,
+      "static/GpSzaXCu9GLDuaCokRWUF/pages/index.js": 3,
+      "static/GpSzaXCu9GLDuaCokRWUF/pages/post/[id].js": 4,
+      "static/i-bWz0p6Ip4m5OZ4mHDh8/pages/_app.js": 5,
+      "static/i-bWz0p6Ip4m5OZ4mHDh8/pages/_document.js": 6,
+      "static/i-bWz0p6Ip4m5OZ4mHDh8/pages/_error.js": 7,
+      "static/i-bWz0p6Ip4m5OZ4mHDh8/pages/index.js": 8,
+      "static/i-bWz0p6Ip4m5OZ4mHDh8/pages/post/[id].js": 9,
+      "static/StWYXgre9NhoL-vEZYsHh/pages/_app.js": 0,
+      "static/StWYXgre9NhoL-vEZYsHh/pages/_document.js": 1,
+      "static/StWYXgre9NhoL-vEZYsHh/pages/_error.js": 2,
+      "static/StWYXgre9NhoL-vEZYsHh/pages/index.js": 3,
+      "static/StWYXgre9NhoL-vEZYsHh/pages/post/[id].js": 4,
+      "static/JQEOV9-LNLaBrtXzby76b/pages/_app.js": 5,
+      "static/JQEOV9-LNLaBrtXzby76b/pages/_document.js": 6,
+      "static/JQEOV9-LNLaBrtXzby76b/pages/_error.js": 7,
+      "static/JQEOV9-LNLaBrtXzby76b/pages/index.js": 8,
+      "static/JQEOV9-LNLaBrtXzby76b/pages/post/[id].js": 9,
+      "static/VNGclE1qPpSbVltpPSHVg/pages/_app.js": 0,
+      "static/VNGclE1qPpSbVltpPSHVg/pages/_document.js": 1,
+      "static/VNGclE1qPpSbVltpPSHVg/pages/_error.js": 2,
+      "static/VNGclE1qPpSbVltpPSHVg/pages/index.js": 3,
+      "static/VNGclE1qPpSbVltpPSHVg/pages/post/[id].js": 4,
+      "static/An0I60IkDAvKlozZh3bfd/pages/_app.js": 5,
+      "static/An0I60IkDAvKlozZh3bfd/pages/_document.js": 6,
+      "static/An0I60IkDAvKlozZh3bfd/pages/_error.js": 7,
+      "static/An0I60IkDAvKlozZh3bfd/pages/index.js": 8,
+      "static/An0I60IkDAvKlozZh3bfd/pages/post/[id].js": 9,
+      "static/ogo2XzpiZ1WnBl9sZdskd/pages/_app.js": 0,
+      "static/ogo2XzpiZ1WnBl9sZdskd/pages/_document.js": 1,
+      "static/ogo2XzpiZ1WnBl9sZdskd/pages/_error.js": 2,
+      "static/ogo2XzpiZ1WnBl9sZdskd/pages/index.js": 3,
+      "static/ogo2XzpiZ1WnBl9sZdskd/pages/post/[id].js": 4,
+      "static/FAyGfpVBnKy-xY2PBrZ_S/pages/_app.js": 5,
+      "static/FAyGfpVBnKy-xY2PBrZ_S/pages/_document.js": 6,
+      "static/FAyGfpVBnKy-xY2PBrZ_S/pages/_error.js": 7,
+      "static/FAyGfpVBnKy-xY2PBrZ_S/pages/index.js": 8,
+      "static/FAyGfpVBnKy-xY2PBrZ_S/pages/post/[id].js": 9
+    },
+    "bySource": {},
+    "usedIds": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
